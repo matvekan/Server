@@ -1,6 +1,9 @@
 package com.tattoo.network.commands;
 
-public class AuthCommand extends Command {
+import java.io.Serializable;
+
+public class AuthCommand extends Command implements Serializable {
+    private static final long serialVersionUID = 1L; // Должен совпадать на клиенте и сервере!
     private final String login;
     private final String password;
 
@@ -10,6 +13,7 @@ public class AuthCommand extends Command {
         this.password = password;
     }
 
+    // Геттеры
     public String getLogin() { return login; }
     public String getPassword() { return password; }
 }

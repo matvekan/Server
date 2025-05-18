@@ -34,7 +34,6 @@ public class CommandProcessor {
                             bookCmd.getDateTime(),
                             bookCmd.getClientNotes()
                     );
-
                 case MASTER:
                     MasterCommand masterCmd = (MasterCommand) command;
                     switch (masterCmd.getAction()) {

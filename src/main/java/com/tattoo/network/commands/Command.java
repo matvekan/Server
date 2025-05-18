@@ -3,7 +3,7 @@ package com.tattoo.network.commands;
 import java.io.Serializable;
 
 public abstract class Command implements Serializable {
-    public enum Type { AUTH, BOOK_APPOINTMENT, MASTER, SERVICE, GET_MASTERS }
+    public enum Type { AUTH, BOOK_APPOINTMENT, MASTER, GET_MASTERS,SERVICE }
     private final Type type;
 
     protected Command(Type type) {
